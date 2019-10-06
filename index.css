@@ -18,6 +18,21 @@ html, body {
 .centex{
     display:inline-block
 }
-
-.twinge{
+#languages, #projects{
+    height:100%;
+    text-align:center;
+    
+}
+ul{
+    display: inline-block;
+    width: 33.333333%;
+}
+li{
+    float: left;
+    list-style: none;
+    width: 35%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 10px;
 }
