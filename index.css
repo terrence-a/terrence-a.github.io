@@ -1,32 +1,164 @@
 @import url('https://fonts.googleapis.com/css?family=Arimo:100, 300|Titillium+Web&display=swap');
 
-html, body {
-    height: 100%;
-    margin: 0;
-    background-color:rgb(0, 16, 104);
-    color: white
+@media (prefers-color-scheme: light) {
+    html, body {
+        height: 100%;
+        margin: 0;
+        background-color:rgb(233, 231, 220);
+        color: rgb(0, 13, 87);
+        font-family: Arimo;
+        animation: cc-l 3s infinite;
+    }
+    .p-itm{
+        border:3px solid rgb(0, 13, 87);
+        animation:bcc-l 3s infinite;
+    }
+
+  }
+  @media (prefers-color-scheme: dark) {
+    html, body, a {
+        height: 100%;
+        margin: 0;
+        background-color:rgb(4,9,37);
+        color: rgb(226, 226, 226);
+        font-family: Arimo;
+        animation: cc-d 3s infinite;
+    }
+    .p-itm{
+        border: 3px solid rgb(226,226,226);
+        animation: bcc-d 3s infinite;
+    }
+  }
+  @media screen and (max-width: 600px) {
+      .p-itm {
+          width:80%
+      }
+      
+  }
+
+@keyframes cc-d {
+    50%{
+        color:rgb(255, 218, 148)
+    }
 }
+
+@keyframes cc-l {
+    50%{
+        color:rgb(0, 54, 153)
+    }
+}
+
+@keyframes bcc-d {
+    50%{
+    border-color: rgb(255, 218, 148)
+    }
+
+}
+
+@keyframes bcc-l {
+    50%{
+    border-color: rgb(0, 54, 153)
+    }
+
+}
+
+*:visited{
+    text-decoration: none;
+}
+
+*:link {
+    text-decoration: none;
+}
+*:active{
+    text-decoration: none;
+}
+.blinker{
+    display: none;
+}
+
+.title-name{
+    font-size: 4vw;
+}
+
+#lang-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lang-table td {
+    font-size: 1vw;
+}
+#title-desc {
+    font-size: 2vw;
+    text-align: left;
+}
+
+.lang-col{
+    display: inline-block;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+#splash {
+    min-height: 100%;
+    margin: 5%
+}
+
 #landing {
-    min-height:100%;
-    padding-top:2.5em;
-    font-family: Arimo
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    transform: translate(-30%, -35%);
+    text-align: center;
 }
+
 #wrapper{
     text-align: center;
     padding-top: 12.5em;
 }
+
 .centex{
     display:inline-block
 }
-#languages, #projects{
-    height:100%;
-    text-align:center;
-    
+
+#languages, #projects, #experience{
+    height: auto 100%;
+    margin-left: 5%;
+}
+
+.p-itm{
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    height:auto;
+    width:60%;
+    border-radius: 10px;
+    left: 50%;
+    margin: auto;
+    margin-bottom: 1vw;
+    padding-bottom: 1vw;
+}
+
+@keyframes bcc {
+    50%{
+    border-color: rgb(0, 54, 153)
+    }
+
+}
+div.p-itm > *{
+    font-size:1vw
+}
+
+div.p-lang > * {
+    display: inline;
 }
 ul{
     display: inline-block;
     width: 33.333333%;
 }
+
 li{
     float: left;
     list-style: none;
@@ -35,4 +167,32 @@ li{
     margin-bottom: 1%;
     padding: 1%;
     border-radius: 10px;
+}
+
+.lang-itm, .exp-itm {
+    font-size:1vw
+}
+
+.exp-itm {
+    margin-left:2vw;
+    
+}
+.lang-itm i {
+    font-size: 2vw;
+}
+
+#experience {
+    padding-bottom:2.5%
+}
+
+lang-table td:nth-child(odd) {
+    padding-right: 5%;
+}
+
+.mrr {
+    padding-right: 4em;
+}
+
+.ghi {
+    font-size: 2rem;
 }

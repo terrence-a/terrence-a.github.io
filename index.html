@@ -1,48 +1,145 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="index.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel=stylesheet type="text/css" href="index.css">
+        <script src="https://kit.fontawesome.com/20838bb8eb.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     </head>
     <body>
-        <div id="landing">
-            <h2>Hello, I'm</h2>
-            <div id="wrapper">
-                <div class="centex">
-                    <h1>Terrence Amponsah</h1>
-                    <h3>I'm a Computer Science student at the University of Toronto!</h3>
-                    <!-- Fonts to be arranged later.-->
-                    <a href="#"><i class="fas fa-arrow-down"></i></a>
-                </div>
+        <div id="topbar">
+            
+        </div>
+
+        <div id=splash>
+            <p id=title-desc>Hi, my name is</p>
+            <div id=landing>
+                <h1 class=title-name>Terrence Amponsah<span class=blinker> |</span></h1>
+                <p id=title-desc>I'm a Bioinfomatics Student at the University of Toronto looking for roles in Web and Software Development.</p>
+                <span class=title-name>
+                    <a href="https://www.linkedin.com/in/terrence-amponsah-683474123/">
+                        <i class="devicon-linkedin-plain"></i>
+                    </a>
+                    <a href="https://github.com/terrence-a">
+                        <i class="devicon-github-original" ></i>
+                    </a>
+                    <a href="mailto:tamponsah9909@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </span>
             </div>
         </div>
-        <div id="languages">
-            <h2>Skills</h2>
-            <ul>
-                <li>Python</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Django</li>
-                <a href="#"><i class="fas fa-arrow-down"></i></a>
-            </ul>
+
+        <div id=projects>
+            <h2>Featured Projects<span class=blinker>:</span></h2>
+            <div class="p-itm">
+                <table>
+                    <tr style="text-align: center;">
+                        <td colspan="4"><h3>Quick-Review</h3></td>
+                        <td colspan="4">React Web Application for searching and reviewing local restaurants.</td>
+                        <td colspan="1" style="width: 2vw;"><a href="https://github.com/csc309-fall-2021/team15"><i class="devicon-github-plain ghi"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Mongoose.js</td>
+                        <td colspan="2">Express.js</td>
+                        <td colspan="2">React.js</td>
+                        <td colspan="2">Node.js</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="p-itm">
+                <table>
+                    <tr style="text-align: center;">
+                        <td colspan="2"><h3>SOO Mobile App</h3></td>
+                        <td colspan="6">Mobile Application which allows current users of the Special Olympics Ontario website to access their data. </td>
+                        <td colspan="1" style="width: 2vw;"><a href="https://github.com/orgs/csc301-fall-2021/teams/17-special-olympics-ontario"><i class="devicon-github-plain ghi"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1" style="min-width: 10em;">React-Native</td>
+                        <td colspan="1">Expo</td>
+                        <td colspan="1">Node.js</td>
+                        <td colspan="1">PHP</td>
+                        <td colspan="1">WordPress</td>
+                    </tr>
+                </table>
+            </div>
+            <h2>Other Projects<span class=blinker>:</span></h2>
+            <div class="p-itm">
+                <table>
+                    <tr style="text-align: center;">
+                        <td colspan="3"><h3>Restaurant Reservation API</h3></td>
+                        <td colspan="3">RESTful API with support for creating restaurants and creating reservations for existing restaurants.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Mongoose.js</td>
+                        <td colspan="2">Express.js</td>
+                        <td colspan="2">Node.js</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="p-itm">
+                <table>
+                    <tr style="text-align: center;">
+                        <td colspan="3"><h3>SNPVisualizR</h3></td>
+                        <td colspan="3">R Package for analysis of SNP Data from VCF Files.</td>
+                        <td colspan="0" style="width: 2vw;"><a href="https://github.com/terrence-a/SNPVisualizR"><i class="devicon-github-plain ghi"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">R</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="p-itm">
+                <table>
+                    <tr style="text-align: center;">
+                        <td colspan="3"><h3>Habit Calendar</h3></td>
+                        <td colspan="3">Calendar implemented in Java which allows tacking of habits.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Java</td>
+                        <td colspan="3">Git</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div id="projects">
-            <h2>Portfolio</h2>
-            <ul>
-                <li><a href="http://www.rootsyard.org/">Rootsyard Lodge Website<b class="twinge">HTML, CSS, Javascript</b></a></li>
-                <!-- TODO Add rules about fadein animation for languages -->
-                <li>T's Tea Blog Website || Django, HTML, CSS || In Progress</li>
-                <li>Pauline Major Lifestyle Blog Website || Wordpress, CSS, HTML</li>
-                <a href="#"><i class="fas fa-arrow-down"></i></a>
-            </ul>
+        <div id=languages>
+            <h2>Languages and Technologies</h2>
+            <table id=lang-table>
+                <tr>
+                    <td class=mrr><i class="devicon-javascript-plain"></i> Javascript</td>
+                    <td><i class="devicon-html5-plain-wordmark"></i> HTML/CSS</td>
+                </tr>
+                <tr>
+                    <td class=mrr><i class="devicon-react-original"></i> React.js</td>
+                    <td><i class="devicon-heroku-original"></i> Heroku</td>
+                </tr>
+                <tr>
+                    <td class=mrr><i class="devicon-nodejs-plain"></i> Node.js</td>
+                    <td><i class="devicon-amazonwebservices-original"></i> Amazon EC2</td>
+                </tr>
+                <tr>
+                    <td class=mrr><i class="devicon-express-original"></i> Express.js</td>
+                    <td><i class="devicon-git-plain"></i> Git</td>
+                </tr>
+                <tr>
+                    <td class=mrr><i class="devicon-python-plain"></i> Python</td>
+                    <td><i class="devicon-php-plain"></i> PHP</td>
+                </tr>
+                <tr>
+                    <td class=mrr><i class="devicon-django-line"></i> Django</td>
+                    <td><i class="devicon-r-original"></i> R</td>
+                </tr>
+            </table>
         </div>
-        <div id="past-jobs">
-            <h2>Experience</h2>
-            <h3><b>New College Residence Council</b> -- Director of Communications, May 2019 - April 2020</h3>
-            <h3><b>Elan Data Makers</b> -- Data Entry Operator, Summer 2019</h3>
-            <h3><b>New College Residence Council</b> -- Junior House Representative, September 2018 - April 2019</h3>
-            <a href="#"><i class="fas fa-arrow-down"></i></a>
+        <div id=experience>
+            <h2>Where I've worked in the past...<span class="blinker">:</span></h2>
+            <div class=exp-itm>
+                <h3>Nowhere... yet</h3>
+                <p>Help change this<span class=blinker>:</span></p>
+                <a href="./resume-terrence_amponsah.pdf" download>Resume</a>
+            </div> 
+        </div>
+        <div id=footer>
+
         </div>
     </body>
 </html>
