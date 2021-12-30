@@ -154,35 +154,21 @@ div.p-itm > *{
 div.p-lang > * {
     display: inline;
 }
-ul{
-    display: inline-block;
-    width: 33.333333%;
-}
-
-li{
-    float: left;
-    list-style: none;
-    width: 35%;
-    margin-left: 5%;
-    margin-bottom: 1%;
-    padding: 1%;
-    border-radius: 10px;
-}
 
 .lang-itm, .exp-itm {
     font-size:1vw
 }
 
 .exp-itm {
-    margin-left:2vw;
-    
+    margin-left: 5%;
 }
+
 .lang-itm i {
     font-size: 2vw;
 }
 
 #experience {
-    padding-bottom:2.5%
+    padding-bottom:2.5%;
 }
 
 lang-table td:nth-child(odd) {
