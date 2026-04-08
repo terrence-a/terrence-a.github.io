@@ -1,145 +1,115 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel=stylesheet type="text/css" href="index.css">
-        <script src="https://kit.fontawesome.com/20838bb8eb.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
-    </head>
-    <body>
-        <div id="topbar">
-            
-        </div>
+<html lang="en">
 
-        <div id=splash>
-            <p id=title-desc>Hi, my name is</p>
-            <div id=landing>
-                <h1 class=title-name>Terrence Amponsah<span class=blinker> |</span></h1>
-                <p id=title-desc>I'm a Bioinfomatics Student at the University of Toronto looking for roles in Web and Software Development.</p>
-                <span class=title-name>
-                    <a href="https://www.linkedin.com/in/terrence-amponsah-683474123/">
-                        <i class="devicon-linkedin-plain"></i>
-                    </a>
-                    <a href="https://github.com/terrence-a">
-                        <i class="devicon-github-original" ></i>
-                    </a>
-                    <a href="mailto:tamponsah9909@gmail.com">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </span>
-            </div>
-        </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terrence Amponsah — Software Engineer</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
 
-        <div id=projects>
-            <h2>Featured Projects<span class=blinker>:</span></h2>
-            <div class="p-itm">
-                <table>
-                    <tr style="text-align: center;">
-                        <td colspan="4"><h3>Quick-Review</h3></td>
-                        <td colspan="4">React Web Application for searching and reviewing local restaurants.</td>
-                        <td colspan="1" style="width: 2vw;"><a href="https://github.com/csc309-fall-2021/team15"><i class="devicon-github-plain ghi"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Mongoose.js</td>
-                        <td colspan="2">Express.js</td>
-                        <td colspan="2">React.js</td>
-                        <td colspan="2">Node.js</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="p-itm">
-                <table>
-                    <tr style="text-align: center;">
-                        <td colspan="2"><h3>SOO Mobile App</h3></td>
-                        <td colspan="6">Mobile Application which allows current users of the Special Olympics Ontario website to access their data. </td>
-                        <td colspan="1" style="width: 2vw;"><a href="https://github.com/orgs/csc301-fall-2021/teams/17-special-olympics-ontario"><i class="devicon-github-plain ghi"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="1" style="min-width: 10em;">React-Native</td>
-                        <td colspan="1">Expo</td>
-                        <td colspan="1">Node.js</td>
-                        <td colspan="1">PHP</td>
-                        <td colspan="1">WordPress</td>
-                    </tr>
-                </table>
-            </div>
-            <h2>Other Projects<span class=blinker>:</span></h2>
-            <div class="p-itm">
-                <table>
-                    <tr style="text-align: center;">
-                        <td colspan="3"><h3>Restaurant Reservation API</h3></td>
-                        <td colspan="3">RESTful API with support for creating restaurants and creating reservations for existing restaurants.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">Mongoose.js</td>
-                        <td colspan="2">Express.js</td>
-                        <td colspan="2">Node.js</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="p-itm">
-                <table>
-                    <tr style="text-align: center;">
-                        <td colspan="3"><h3>SNPVisualizR</h3></td>
-                        <td colspan="3">R Package for analysis of SNP Data from VCF Files.</td>
-                        <td colspan="0" style="width: 2vw;"><a href="https://github.com/terrence-a/SNPVisualizR"><i class="devicon-github-plain ghi"></i></a></td>
-                    </tr>
-                    <tr>
-                        <td colspan="6">R</td>
-                    </tr>
-                </table>
-            </div>
-            <div class="p-itm">
-                <table>
-                    <tr style="text-align: center;">
-                        <td colspan="3"><h3>Habit Calendar</h3></td>
-                        <td colspan="3">Calendar implemented in Java which allows tacking of habits.</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Java</td>
-                        <td colspan="3">Git</td>
-                    </tr>
-                </table>
-            </div>
+<body class="dark">
+  <!-- Refresh button to restore closed windows -->
+  <button id="refreshWindows" class="refresh-btn" title="Restore closed windows">
+    <img src="./static/refr0.png" alt="Refresh" class="btn-icon">
+  </button>
+  <canvas id="backgroundCanvas"></canvas>
+  <header class="site-header hero">
+    <div class="container hero-inner">
+      <div class="header-inner splash-container">
+        <h1 class="site-title">Terrence Amponsah</h1>
+        <p class="subtitle">Software Engineer · Toronto, Canada</p>
+        <div class="hero-buttons">
+          <a href="https://linkedin.com/in/your-link" target="_blank" rel="noopener" class="btn"><img
+              src="./static/li.png" alt="LinkedIn" class="btn-icon"></a>
+          <a href="https://github.com/terrence-a" target="_blank" rel="noopener" class="btn"><i
+              class="fab fa-github"></i></a>
+          <a href="mailto:your.email@example.com" class="btn"><img src="./static/mail.png" alt="Email" class="btn-icon mail-icon"></a>
         </div>
-        <div id=languages>
-            <h2>Languages and Technologies</h2>
-            <table id=lang-table>
-                <tr>
-                    <td class=mrr><i class="devicon-javascript-plain"></i> Javascript</td>
-                    <td><i class="devicon-html5-plain-wordmark"></i> HTML/CSS</td>
-                </tr>
-                <tr>
-                    <td class=mrr><i class="devicon-react-original"></i> React.js</td>
-                    <td><i class="devicon-heroku-original"></i> Heroku</td>
-                </tr>
-                <tr>
-                    <td class=mrr><i class="devicon-nodejs-plain"></i> Node.js</td>
-                    <td><i class="devicon-amazonwebservices-original"></i> Amazon EC2</td>
-                </tr>
-                <tr>
-                    <td class=mrr><i class="devicon-express-original"></i> Express.js</td>
-                    <td><i class="devicon-git-plain"></i> Git</td>
-                </tr>
-                <tr>
-                    <td class=mrr><i class="devicon-python-plain"></i> Python</td>
-                    <td><i class="devicon-php-plain"></i> PHP</td>
-                </tr>
-                <tr>
-                    <td class=mrr><i class="devicon-django-line"></i> Django</td>
-                    <td><i class="devicon-r-original"></i> R</td>
-                </tr>
-            </table>
-        </div>
-        <div id=experience>
-            <h2>Where I've worked in the past...<span class="blinker">:</span></h2>
-            <div class="exp-itm">
-                <h3>Nowhere... yet</h3>
-                <p>Help change this<span class=blinker>:</span></p>
-                <a href="./resume-terrence_amponsah.pdf" download>Resume</a>
-            </div> 
-        </div>
-        <div id=footer>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </header>
 
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <div class="card-content">
+        <p>I am a Software Engineer based in Toronto with an H.B.Sc in Bioinformatics and Computational Biology from the University of Toronto. Currently at ADP, I build automated AI agents, engineer scalable front-end and back-end solutions, and lead workflow efficiency initiatives.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+      <div class="card-content">
+        <div class="job">
+          <h3>Software Engineer — ADP</h3>
+          <p class="date">Sept 2024 &ndash; Present</p>
+          <ul>
+            <li>Developed an automated AI Agent for QA testing and UI-development, reducing QA efforts by up to 80% and dev by 65%.</li>
+            <li>Led UI refresh of Workforce Now migrating to modern components, resulting in 15% reduction in onboarding time.</li>
+            <li>Engineered scalable backend solutions using Java/Spring Boot (RESTful APIs, SQL), improving response times by 15%.</li>
+          </ul>
         </div>
-    </body>
+        <div class="job" style="margin-top: 12px; border-top: 1px dotted var(--win-dark-gray); padding-top: 8px;">
+          <h3>Associate Application Developer — ADP</h3>
+          <p class="date">Sept 2022 &ndash; Aug 2024</p>
+          <ul>
+            <li>Developed scalable web applications using Java, Spring-Boot, React-Redux, and JavaScript.</li>
+          </ul>
+        </div>
+        <div class="job" style="margin-top: 12px; border-top: 1px dotted var(--win-dark-gray); padding-top: 8px;">
+          <h3>Web Developer — Infrar3d</h3>
+          <p class="date">Jan 2022 &ndash; Aug 2022</p>
+          <ul>
+            <li>Designed interactive UX dashboards, resulting in 30% decrease in data entry errors.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Technical Skills</h2>
+      <div class="card-content">
+        <p><strong>Languages:</strong> Java, JavaScript/TypeScript, Python, SQL, C, Swift, R, HTML/CSS</p>
+        <p style="margin-top: 6px;"><strong>Technologies:</strong> Spring Boot, Node.js, React, Redux, Angular, AWS, Docker, AI (Claude, MCP), MongoDB, Express, Flask</p>
+        <p style="margin-top: 6px;"><strong>Tools:</strong> Git, JIRA, Postman, Selenium, Jenkins, Splunk, JUnit</p>
+      </div>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects & Contributions</h2>
+      <div class="card-content">
+        <ul>
+          <li><strong>deckBuildr (2026):</strong> Magic: The Gathering deck-building tool (Python, JS, HTML/CSS).</li>
+          <li><strong>Root Measurement Tool (2022):</strong> Optimized an arabidopsis root measurement algorithm (Java, ImageJ).</li>
+          <li><strong>SNP Databasing Project (2022):</strong> Python workflow automation for processing SNP data (Python, R, SQL).</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <small>© 2025 Terrence Amponsah</small>
+      <div class="footer-buttons">
+        <a href="https://linkedin.com/in/your-link" target="_blank" rel="noopener" class="btn">
+          <img src="./static/li.png" alt="LinkedIn" class="btn-icon"> LinkedIn</a>
+        <a href="https://github.com/terrence-a" target="_blank" rel="noopener" class="btn">
+          <i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:your.email@example.com" class="btn">
+          <img src="./static/mail.png" alt="Email" class="btn-icon mail-icon"> Email</a>
+      </div>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
 </html>
