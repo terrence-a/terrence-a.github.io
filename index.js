@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const refreshBtn = document.getElementById('refreshWindows');
   if (refreshBtn) {
     refreshBtn.addEventListener('click', function () {
-      // Swap icon to refr1 on click
+      // Swap icon to restore0 on click
       const icon = refreshBtn.querySelector('.btn-icon');
       if (icon) {
-        icon.src = './static/refr1.png';
+        icon.src = './static/restore0.png';
         // Swap back after a short delay
         setTimeout(() => {
-          icon.src = './static/refr0.png';
+          icon.src = './static/restore.png';
         }, 400);
       }
 
